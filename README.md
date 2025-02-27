@@ -1,1 +1,1 @@
-# Dyf_model
+# Logical modelling of dysferlinopathies
