@@ -1,0 +1,32 @@
+# model in BoolNet format
+# the header targets, factors is mandatory to be importable in the R package BoolNet
+
+targets, factors
+AP,             AP
+AnxA1,          extCa
+AnxA2,          extCa
+CONTRACTION,    cytCa_b1&cytCa_b2
+Calpain,        extCa
+DHPR,           AP
+Dysferlin_b1,   Dysferlin_b1
+Dysferlin_b2,   extCa&Dysferlin_b1
+LESION,         LESION&!cpxREPAIR
+MCU_b1,         !MCU_b1&cytCa_b1 | MCU_b1&!MCU_b2&cytCa_b1 | MCU_b1&MCU_b2
+MCU_b2,         MCU_b1&cytCa_b1
+MG53,           ROS
+NCLX,           mtCa_b1
+NECROSIS,       mPTP
+ROS,            LESION
+RyR1,           DHPR
+SERCA,          !srCa_b1&cytCa_b1 | srCa_b1&!srCa_b2&cytCa_b1
+cpxREPAIR,      Dysferlin_b1&Dysferlin_b2&MG53&AnxA2&AnxA1&mini_Dysferlin
+cytCa_b1,       !extCa&!mtCa_b1&!srCa_b1 | !extCa&!mtCa_b1&srCa_b1&!srCa_b2 | !extCa&!mtCa_b1&srCa_b1&srCa_b2&cytCa_b1&cytCa_b2 | !extCa&mtCa_b1&!srCa_b1 | !extCa&mtCa_b1&srCa_b1&cytCa_b1&cytCa_b2 | extCa
+cytCa_b2,       !extCa&!mtCa_b1&!srCa_b1&cytCa_b1 | extCa&cytCa_b1
+extCa,          LESION&!Dysferlin_b1 | LESION&Dysferlin_b1&!Dysferlin_b2
+leaky_RyR1,     !Dysferlin_b1&cytCa_b1&cytCa_b2
+mPTP,           mtCa_b1&mtCa_b2
+mini_Dysferlin, Dysferlin_b1&Dysferlin_b2&Calpain
+mtCa_b1,        !mtCa_b1&MCU_b1&MCU_b2&cytCa_b1&!NCLX | mtCa_b1&!mtCa_b2&!MCU_b1&!NCLX | mtCa_b1&!mtCa_b2&MCU_b1&!MCU_b2&!NCLX | mtCa_b1&!mtCa_b2&MCU_b1&MCU_b2&!cytCa_b1&!NCLX | mtCa_b1&!mtCa_b2&MCU_b1&MCU_b2&cytCa_b1&!cytCa_b2&!NCLX | mtCa_b1&!mtCa_b2&MCU_b1&MCU_b2&cytCa_b1&cytCa_b2 | mtCa_b1&mtCa_b2
+mtCa_b2,        mtCa_b1&!mtCa_b2&MCU_b1&MCU_b2&cytCa_b1&cytCa_b2 | mtCa_b1&mtCa_b2&!MCU_b1&!NCLX | mtCa_b1&mtCa_b2&MCU_b1&!MCU_b2&!NCLX | mtCa_b1&mtCa_b2&MCU_b1&MCU_b2&!cytCa_b1&!NCLX | mtCa_b1&mtCa_b2&MCU_b1&MCU_b2&cytCa_b1&!cytCa_b2&!NCLX | mtCa_b1&mtCa_b2&MCU_b1&MCU_b2&cytCa_b1&cytCa_b2
+srCa_b1,        !RyR1&!SERCA&srCa_b1&!srCa_b2&!leaky_RyR1 | !RyR1&!SERCA&srCa_b1&srCa_b2 | !RyR1&SERCA&!srCa_b1&cytCa_b1&!cytCa_b2&!leaky_RyR1 | !RyR1&SERCA&!srCa_b1&cytCa_b1&cytCa_b2 | !RyR1&SERCA&srCa_b1&!srCa_b2&!cytCa_b1&!leaky_RyR1 | !RyR1&SERCA&srCa_b1&!srCa_b2&cytCa_b1&!cytCa_b2&!leaky_RyR1 | !RyR1&SERCA&srCa_b1&!srCa_b2&cytCa_b1&cytCa_b2 | !RyR1&SERCA&srCa_b1&srCa_b2 | RyR1&srCa_b1&srCa_b2
+srCa_b2,        !RyR1&!SERCA&srCa_b1&srCa_b2&!leaky_RyR1 | !RyR1&SERCA&srCa_b1&!srCa_b2&cytCa_b1&!leaky_RyR1 | !RyR1&SERCA&srCa_b1&srCa_b2&!leaky_RyR1
