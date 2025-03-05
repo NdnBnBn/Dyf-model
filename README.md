@@ -24,10 +24,9 @@ The regulatory graph is visualized below:
 **Documentation:** This section includes a detailed spreadsheet that summarizes the symptoms and treatments associated with dysferlinopathies. Additionally, it contains explanations for each regulatory mechanism represented in the model, providing the underlying biological mechanisms and literature references.
 
 **Code:** Python scripts for:
-
-    - Simulating the logical model dynamics
-    - Performing attractor analysis
-    - Assessing attractor reachability from given inputs
-    - Generating phenotypic interpretations based on simulation results
+  - Simulating the logical model dynamics
+  - Performing attractor analysis
+  - Assessing attractor reachability from given inputs
+  - Generating phenotypic interpretations based on simulation results
     
 **Preliminary Results:** A summary document is provided that describes the outcomes of the initial analyses.
