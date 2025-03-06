@@ -28,7 +28,7 @@ The regulatory graph:
 ![model](https://github.com/user-attachments/assets/44b73e31-e821-497f-927d-957830eace81)
 
 **Documentation:** This directory contain the following files:
-- A PDF file providing the necessary biological background on dysferlinopathies. This file serves as an introduction to this work.
+- A PDF file providing the necessary biological background on dysferlinopathies. This file serves as a detailed introduction to this work.
 - 3 HTML files containing tables summarising:
   - Symptoms
   - Treatments
