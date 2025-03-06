@@ -25,6 +25,7 @@ Additional components involved in necrosis, muscle regeneration and immune respo
 
 
 The regulatory graph:
+
 ![model](https://github.com/user-attachments/assets/44b73e31-e821-497f-927d-957830eace81)
 
 **Documentation:** This directory contain the following files:
