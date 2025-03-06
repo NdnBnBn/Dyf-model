@@ -1,4 +1,6 @@
-# Logical modelling of dysferlinopathies
+ <div align="justify">   
+ 
+ # Logical modelling of dysferlinopathies
 
 Dysferlinopathies are a group of rare genetic myopathies caused by mutations in the DYSF gene. These mutations lead to a reduction or absence of dysferlin—a protein essential for muscle cell membrane repair. As a result, patients experience progressive skeletal muscle weakness and atrophy, eventually affecting all skeletal muscles. Typically, symptoms appear in late adolescence or early adulthood.
 
@@ -25,10 +27,17 @@ Additional components involved in necrosis, muscle regeneration and immune respo
 The regulatory graph:
 ![model](https://github.com/user-attachments/assets/44b73e31-e821-497f-927d-957830eace81)
 
-**Documentation:** This section includes a detailed spreadsheet that summarizes the symptoms and treatments associated with dysferlinopathies. Additionally, it contains explanations for each regulatory mechanism represented in the model, providing the underlying biological mechanisms and literature references.
+**Documentation:** This directory contain the following files:
+- A PDF file providing the necessary biological background on dysferlinopathies. This file serves as an introduction to this work.
+- 3 HTML files containing tables summarising:
+  - Symptoms
+  - Treatments
+  - Information regarding the regulation included in the model. This table contains explanations for each regulatory mechanism represented in the model, providing the underlying biological mechanisms and literature references.
+
 
 **Code:** Python scripts for:
   - Simulating the logical model dynamics
   - Performing attractor analysis
   - Assessing attractor reachability from given inputs
     
+</div>
